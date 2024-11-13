@@ -144,10 +144,6 @@ en https://developer.android.com/training/safetynet/attestation
 Dentro de esa carpeta depositamos el archivo de licencia que se generara para la implementación en debug y otra para reléase
 
 
-## Luego vamos a generar la llave safetynet 
-https://developer.android.com/training/safetynet/attestation
-en la url se muestran los detalles para solicitar la llave safetynet 
-
 
 ## Los permisos en runtime deben ser solicitados por la app
 para el uso de bytte es necesario los siguientes:
