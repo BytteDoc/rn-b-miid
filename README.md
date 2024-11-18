@@ -49,17 +49,17 @@ Copie el siguiente código a su .npmrc.
 
 
 ```
-registry=https://byttetfs.pkgs.visualstudio.com/c1dcbe70-4508-4f44-bfa8-e50bdbfea41f/_packaging/RN-B-MIID/npm/registry/ 
+registry=https://byttetfs.pkgs.visualstudio.com/c1dcbe70-4508-4f44-bfa8-e50bdbfea41f/_packaging/rn-b-miid/npm/registry/ 
                         
 always-auth=true
 
 ; begin auth token
-//byttetfs.pkgs.visualstudio.com/c1dcbe70-4508-4f44-bfa8-e50bdbfea41f/_packaging/RN-B-MIID/npm/registry/:username=BytteTFS
-//byttetfs.pkgs.visualstudio.com/c1dcbe70-4508-4f44-bfa8-e50bdbfea41f/_packaging/RN-B-MIID/npm/registry/:_password=[BASE64_ENCODED_PERSONAL_ACCESS_TOKEN]
-//byttetfs.pkgs.visualstudio.com/c1dcbe70-4508-4f44-bfa8-e50bdbfea41f/_packaging/RN-B-MIID/npm/registry/:email=npm requires email to be set but doesn't use the value
-//byttetfs.pkgs.visualstudio.com/c1dcbe70-4508-4f44-bfa8-e50bdbfea41f/_packaging/RN-B-MIID/npm/:username=BytteTFS
-//byttetfs.pkgs.visualstudio.com/c1dcbe70-4508-4f44-bfa8-e50bdbfea41f/_packaging/RN-B-MIID/npm/:_password=[BASE64_ENCODED_PERSONAL_ACCESS_TOKEN]
-//byttetfs.pkgs.visualstudio.com/c1dcbe70-4508-4f44-bfa8-e50bdbfea41f/_packaging/RN-B-MIID/npm/:email=npm requires email to be set but doesn't use the value
+//byttetfs.pkgs.visualstudio.com/c1dcbe70-4508-4f44-bfa8-e50bdbfea41f/_packaging/rn-b-miid/npm/registry/:username=BytteTFS
+//byttetfs.pkgs.visualstudio.com/c1dcbe70-4508-4f44-bfa8-e50bdbfea41f/_packaging/rn-b-miid/npm/registry/:_password=[BASE64_ENCODED_PERSONAL_ACCESS_TOKEN]
+//byttetfs.pkgs.visualstudio.com/c1dcbe70-4508-4f44-bfa8-e50bdbfea41f/_packaging/rn-b-miid/npm/registry/:email=npm requires email to be set but doesn't use the value
+//byttetfs.pkgs.visualstudio.com/c1dcbe70-4508-4f44-bfa8-e50bdbfea41f/_packaging/rn-b-miid/npm/:username=BytteTFS
+//byttetfs.pkgs.visualstudio.com/c1dcbe70-4508-4f44-bfa8-e50bdbfea41f/_packaging/rn-b-miid/npm/:_password=[BASE64_ENCODED_PERSONAL_ACCESS_TOKEN]
+//byttetfs.pkgs.visualstudio.com/c1dcbe70-4508-4f44-bfa8-e50bdbfea41f/_packaging/rn-b-miid/npm/:email=npm requires email to be set but doesn't use the value
 ; end auth token
 ```
 En el espacio (BASE64_ENCODED_PERSONAL_ACCESS_TOKEN) se debe ingresar el password enviado por Bytte s.a.s.
@@ -75,7 +75,7 @@ este comando creará un archivo .npmrc en la ruta por defecto C:\Users\USER\\.np
 Una vez detectado el archivo se debe configurar de la siguiente manera.
 
 ```
-registry=https://byttetfs.pkgs.visualstudio.com/c1dcbe70-4508-4f44-bfa8-e50bdbfea41f/_packaging/RN-B-MIID/npm/registry/ 
+registry=https://byttetfs.pkgs.visualstudio.com/c1dcbe70-4508-4f44-bfa8-e50bdbfea41f/_packaging/rn-b-miid/npm/registry/ 
                         
 always-auth=true
 ```
@@ -330,6 +330,7 @@ const btnFace = () => {
 | **ClientKey**      | `string`   | Clave secreta para la autenticación.             |
 | **sesionId**       | `string`   | Llave que encripta la imagen.                    |
 | **Callback**       | `function` | Función para manejar la respuesta en JSON.       |
+
 
 
 
