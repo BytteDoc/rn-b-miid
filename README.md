@@ -50,6 +50,8 @@ Una vez detectado el archivo se debe configurar de la siguiente manera.
 
 Copie el siguiente código a su .npmrc.
 
+Este registry solo utilizalo cuando necesite instalar el plug-in después comentarlo para que no tenga conflictos con los npm
+
 ```
 registry=https://byttetfs.pkgs.visualstudio.com/c1dcbe70-4508-4f44-bfa8-e50bdbfea41f/_packaging/RN-B-MIID/npm/registry/
 
@@ -174,8 +176,31 @@ allprojects {
      }
  }
  }
+ maven { url "https://raw.githubusercontent.com/iProov/android/master/maven/" } //validar si aplica
 }
 
+```
+
+## validar el gradle.properties de android
+
+```
+adicionar
+android.enableJetifier=true
+modificar
+reactNativeArchitectures=armeabi-v7a,arm64-v8a
+para solo dejar las arquitecturas anteriormente nombradas
+
+```
+
+## validar el build.gradle de app
+
+```
+adicionar despues del tag de defaultConfig
+ packagingOptions {
+        pickFirst '**/*.so'
+        pickFirst '**/libc++_shared.so'
+        pickFirst '**/libfbjni.so'
+    }
 ```
 
 Solicitar a **Bytte lo siguiente:** ingresarlo dentro de los ""
