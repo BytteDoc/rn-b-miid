@@ -354,7 +354,7 @@ import { NativeModules } from "react-native";
 
 const { RnBytteBioLibMiid } = NativeModules;
 
-export default RnBytteBioLibMiiD;
+export default RnBytteBioLibMiid;
 ```
 
 ## Metodos react-native-bytte-bio-lib-miid
@@ -368,7 +368,7 @@ import { NativeModules } from "react-native";
 
 const btnFront = () => {
   captureType = "FRONT";
-  NativeModules.RnBytteBioLibMiiD.startDocumentPki(
+  NativeModules.RnBytteBioLibMiid.startDocumentPki(
     url,
     ClientID,
     ClientKey,
@@ -400,7 +400,7 @@ import { NativeModules } from "react-native";
 
 const btnBackDoc = () => {
   captureType = "BACK";
-  NativeModules.RnBytteBioLibMiiD.startDocumentPki(
+  NativeModules.RnBytteBioLibMiid.startDocumentPki(
     url,
     ClientID,
     ClientKey,
@@ -432,7 +432,7 @@ const btnBackDoc = () => {
 import { NativeModules } from "react-native";
 
 const btnFinger = () => {
-  NativeModules.RnBytteBioLibMiiD.startFingerID(
+  NativeModules.RnBytteBioLibMiid.startFingerID(
     url,
     licFinger,
     ClientID,
@@ -464,7 +464,7 @@ const btnFinger = () => {
 import { NativeModules } from "react-native";
 
 const btnFace = () => {
-  NativeModules.RnBytteBioLibMiiD.startFaceID(
+  NativeModules.RnBytteBioLibMiid.startFaceID(
     url,
     licFace,
     ClientID,
@@ -510,3 +510,4 @@ const btnFace = () => {
 Control de cambios
 ------------------------------
 ```
+
